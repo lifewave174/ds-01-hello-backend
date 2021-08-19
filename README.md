@@ -31,6 +31,7 @@ Create another route /html:
         * e.g.: "React" should become `<li>React</li>`    
         * Use the map function for that
     * After conversion: Concatenate the li tags together to a string
+	* Wrap the li string with an ul tag
 
 Test the output of your /html route by visiting http://localhost:5000/html in your browser
 
