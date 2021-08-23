@@ -32,6 +32,7 @@ Create another route /html:
         * Use the map function for that
     * After conversion: Concatenate the li tags together to a string
 	* Wrap the li string with an ul tag
+	* Send the string using the method "res.send()" instead of "res.json()"
 
 Test the output of your /html route by visiting http://localhost:5000/html in your browser
 
@@ -46,6 +47,12 @@ Adapt the HTML output in route /html:
 
 * Create a react-app in a subfolder "client"
     - `npx create-react-app client`
+
+* Make your API reachable for your React app
+	* Move inside the terminal to the folder with your API code
+	* Install the package "cors" (`npm i cors`)
+	* Add this line to your backend file, after you initialized the "app" variable: `app.use( cors() ) `
+	* => this will now make the API reachable from the browser
 
 * Start the API and React in parallel
     * Start the API in the terminal using nodemon (if not running already)
